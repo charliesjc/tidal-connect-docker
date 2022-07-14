@@ -12,6 +12,7 @@ services:
     volumes:
       - ./entrypoint.sh:/entrypoint.sh
       - /var/run/dbus:/var/run/dbus
+      - /tmp:/tmp
     restart: always
     dns:
       - ${DOCKER_DNS}

@@ -1,7 +1,7 @@
 FROM raspbian/stretch
 
 RUN apt-get update -y -q && apt-get upgrade -y -q
-RUN apt install -y -q multiarch-support libavformat57 git libportaudio2* libflac++6v5* libavahi-common3 libavahi-client3 alsa-utils curl
+RUN apt install -y -q multiarch-support libavformat57 git libportaudio2* libflac++6v5* libavahi-common3 libavahi-client3 alsa-utils curl socat
 
 #libcurl3 -y 
 RUN mkdir -p /app/ifi-tidal-release
